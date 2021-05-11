@@ -1,5 +1,5 @@
 # ShippingEcommerceApi
- Shipping Api Example
+ Shipping Api Example 
 
 
 # Arrive Outdoors Commerce API
@@ -20,10 +20,11 @@ dotnet dev-certs https --clean
 dotnet dev-certs https -ep $HOME/.aspnet/https/aspnetapp.pfx -p SuperSecretPassword
 dotnet dev-certs https --trust
 
-docker-compose up --build
+docker-compose --build
+docker-compose up
 ```
 
-The swagger interface can then be found at https://localhost:3001/swagger
+The swagger interface can then be found at http://localhost:3005/swagger/index.html
 
 ## Debugging
 
