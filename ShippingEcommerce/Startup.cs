@@ -28,6 +28,13 @@ namespace ShippingEcommerce
             services.AddCustomMvc();
             services.AddCustomDbContext(Configuration);
             services.AddApplicationServices(Configuration);
+            #region Allow-Orgin
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+            #endregion
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ShippingEcommerce", Version = "v1" });
@@ -45,6 +52,7 @@ namespace ShippingEcommerce
             }
            
             app.UseRouting();
+            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {

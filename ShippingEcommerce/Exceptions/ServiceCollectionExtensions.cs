@@ -29,12 +29,12 @@ namespace ShippingEcommerce.Extensions
 
             services.AddCors(options =>
             {
-                options.AddPolicy("CorsPolicy",
-                    builder => builder
-                        .SetIsOriginAllowed(_ => true)
-                        .AllowAnyMethod()
-                        .AllowAnyHeader()
-                        .AllowCredentials());
+                options.AddPolicy("MyAllowAllHeadersPolicy",
+                 builder =>
+                 {
+                     builder.WithOrigins("*localhost*")
+                            .AllowAnyHeader();
+                 });
             });
 
             return services;

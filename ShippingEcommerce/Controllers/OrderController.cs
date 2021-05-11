@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ShippingEcommerce.Extensions;
 using ShippingEcommerce.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace ShippingEcommerce.Controllers
 {
@@ -19,6 +20,7 @@ namespace ShippingEcommerce.Controllers
         }
 
         [HttpGet]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<IEnumerable<ProductListItem>>> SearchOrders([FromQuery] ProductSearchParams searchParams)
         {
             var products = await _orderService.SearchProducts(searchParams);
