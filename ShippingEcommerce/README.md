@@ -23,7 +23,7 @@ dotnet dev-certs https --trust
 docker-compose up --build
 ```
 
-The swagger interface can then be found at https://localhost:3001/swagger
+The swagger interface can then be found at http://localhost:3000/swagger/index.html
 
 ## Debugging
 
