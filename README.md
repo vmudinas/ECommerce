@@ -2,7 +2,7 @@
  Shipping Api Example 
 
 
-# Arrive Outdoors Commerce API
+# Commerce API
 
 The ASP.NET Core 5 based API for E-Commerce Shipping interview question
 
