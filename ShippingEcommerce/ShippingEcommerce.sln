@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShippingEcommerce", "ShippingEcommerce.csproj", "{04D38276-261F-4496-BC70-60F018BE384E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{52FFA53C-1534-4C6D-9F8B-A1131C5AD847}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestShippingEcommerceService", "..\TestShippingEcommerceService\TestShippingEcommerceService.csproj", "{F06BCEEA-E156-4A7F-A125-70732C65C00A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8D6F6C26-2F67-4B79-B4FF-34FE1298CB05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04D38276-261F-4496-BC70-60F018BE384E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D38276-261F-4496-BC70-60F018BE384E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D38276-261F-4496-BC70-60F018BE384E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D38276-261F-4496-BC70-60F018BE384E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06BCEEA-E156-4A7F-A125-70732C65C00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06BCEEA-E156-4A7F-A125-70732C65C00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06BCEEA-E156-4A7F-A125-70732C65C00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06BCEEA-E156-4A7F-A125-70732C65C00A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F06BCEEA-E156-4A7F-A125-70732C65C00A} = {8D6F6C26-2F67-4B79-B4FF-34FE1298CB05}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E691FE8C-E0BC-4AA7-8A9A-AEB9C4EA1DE0}
+	EndGlobalSection
+EndGlobal
